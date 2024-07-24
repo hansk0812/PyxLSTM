@@ -32,7 +32,7 @@ class xLSTM(nn.Module):
     """
 
     def __init__(self, vocab_size, embedding_size, hidden_size, num_layers, num_blocks,
-                 dropout=0.0, lstm_type="slstm"):
+                 dropout=0.0, bidirectional=False, lstm_type="slstm"):
         super(xLSTM, self).__init__()
         self.vocab_size = vocab_size
         self.embedding_size = embedding_size
